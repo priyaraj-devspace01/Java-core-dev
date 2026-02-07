@@ -12,7 +12,7 @@
 
 ## Static keyword notes - 1
 
-You cannot declare a static variable inside a static method in Java.
+You cannot declare a static variable neither inside a static method nor non-static method, constructor nor inside any block.
 
 Why? (very simple)
 
