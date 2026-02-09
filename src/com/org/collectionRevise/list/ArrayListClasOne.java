@@ -1,4 +1,4 @@
-package com.org.collectionRevise;
+package com.org.collectionRevise.list;
 
 import java.util.*;
 
@@ -28,7 +28,7 @@ class Student
         return gpa;
     }
 }
-public class CollectionMainClass {
+public class ArrayListClasOne {
     public static void main(String[] args) {
 
         ArrayList<Integer> list =  new ArrayList<>(20);
