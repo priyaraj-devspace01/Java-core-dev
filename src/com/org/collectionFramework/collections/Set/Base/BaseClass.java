@@ -8,7 +8,7 @@ public class BaseClass {
     public static void main(String[] args) {
         /*
         Set is a collection which can't contain duplicate values.
-        // like map - HashMap, LinkedHashMap, TreeMap, EnumMap,
+        // like map - FirstMapHashClass, LinkedHashMap, TreeMap, EnumMap,
         //      Set - HashSet, LinkedHashSet, TreeSet, EnumSet
 
          */

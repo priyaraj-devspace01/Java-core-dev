@@ -15,7 +15,7 @@ public class Base {
         Key-Value Pairs: Each entry in a Map consists of a key and a value.
         Unique Keys: No two entries can have the same key.
         One Value per Key: Each key maps to a single value.
-        Order: Some implementations maintain insertion order (LinkedHashMap), natural order (TreeMap), or no order (HashMap).
+        Order: Some implementations maintain insertion order (LinkedHashMap), natural order (TreeMap), or no order (FirstMapHashClass).
          */
 
     }
