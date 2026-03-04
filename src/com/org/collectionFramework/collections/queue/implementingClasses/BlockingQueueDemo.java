@@ -47,7 +47,7 @@ public class BlockingQueueDemo {
         BlockingQueue<Integer> queue = new ArrayBlockingQueue<>(3); // class implementing the BlockingQueue interface
         // A bounded, blocking queue backed by circular array.
         // low memory
-        // uses a single lock for both enqueue and dequeue operations
+        // uses a single lock for both queue and dequeue operations
         // more threads -> problem.
 
         Producer producer = new Producer(queue);
@@ -58,7 +58,7 @@ public class BlockingQueueDemo {
 
         BlockingQueue<Integer> bLinkedQueue = new LinkedBlockingQueue<>();
         // Optionally, bounded backed by linkedList.
-        // Uses two separate locks for enqueue and dequeue operations.
+        // Uses two separate locks for queue and dequeue operations.
         // Higher concurrency between producers and consumers
 
         BlockingQueue<Integer> bArrayBlockingQueue = new PriorityBlockingQueue<>(11, Comparator.reverseOrder());

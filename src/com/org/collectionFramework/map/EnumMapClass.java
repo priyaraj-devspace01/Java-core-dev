@@ -12,7 +12,7 @@ public class EnumMapClass {
     /*
     it used basically a array of size as same as enum numbers.
     No hashing.
-    faster than HashMap used ordinal/ index to store on the array
+    faster than FirstMapHashClass used ordinal/ index to store on the array
     it also memory efficient as well
      */
         Map<Day, String> schedule = new EnumMap<>(Day.class);

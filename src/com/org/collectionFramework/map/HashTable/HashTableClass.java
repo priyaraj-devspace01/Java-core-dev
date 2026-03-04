@@ -8,15 +8,15 @@ public class HashTableClass {
 
 
         /*
-            HashMap vs HashTable
+            FirstMapHashClass vs HashTable
               i ) Hashtable is synchronized.
               ii) No null key or value
               iii) Legacy class, concurrentHashMap
-              iv) slower than HashMap,
+              iv) slower than FirstMapHashClass,
               v) null can't be used for neither for key nor value.
               vi) only uses linked list in case of linked list (not balanced bst like hashMap)
               vii) all methods are synchronized.
-              viii) that's why we need the synchronized HashMap.
+              viii) that's why we need the synchronized FirstMapHashClass.
 
 
 
@@ -29,7 +29,7 @@ public class HashTableClass {
         hashTable.put(5,"five");
 //        hashTable.put(null,"hello");
 //        hashTable.put(33, null);
-        // and other than that all are same as HashMap
+        // and other than that all are same as FirstMapHashClass
         System.out.println(hashTable);
     }
 }

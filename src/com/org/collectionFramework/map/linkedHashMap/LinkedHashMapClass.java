@@ -7,8 +7,8 @@ import java.util.LinkedHashMap;
 public class LinkedHashMapClass {
     public static void main(String[] args) {
 
-        // it's a subclass of HashMap class
-        // the main difference of linked HashMap from hashmap is that it maintains the order unlike Hashmap
+        // it's a subclass of FirstMapHashClass class
+        // the main difference of linked FirstMapHashClass from hashmap is that it maintains the order unlike Hashmap
         // it typically used a doubly linked list to store the entries due to that it faces a performance overhead.
 
         LinkedHashMap<Integer, String> linkedHashMap = new LinkedHashMap<>();

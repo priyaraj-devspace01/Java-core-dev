@@ -20,7 +20,7 @@ public class Base {
 
         // LINKED LIST AS QUEUE
         LinkedList<Integer> queueMde1 = new LinkedList<>();
-        queueMde1.addLast(1); // enqueue
+        queueMde1.addLast(1); // queue
          queueMde1.addLast(2);
         queueMde1.addLast(3);
         queueMde1.addLast(4); // Here all are like add to the queue at the rear end
@@ -35,7 +35,7 @@ public class Base {
         Queue<Integer> queueMde2 = new LinkedList<>();
         queueMde2.add(33);
         queueMde2.add(44);
-        queueMde2.add(55); // Enqueue operation
+        queueMde2.add(55); // queue operation
         System.out.println(queueMde2);
         queueMde2.remove(); // Dequeue Operation
         System.out.println(queueMde2);
