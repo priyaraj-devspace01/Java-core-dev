@@ -2,6 +2,7 @@ package com.org.java8features.streams.StreamOperations;
 
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -52,6 +53,7 @@ public class IntermedicateOperationsClass {
 
        // flatMap
         // primarily used for nested list
+        // handle the stream of collections, lists, or arrays where each element is itself a collection
         List<List<Integer>> listOfListNum = Arrays.asList(
                 Arrays.asList(12, 33),
                 Arrays.asList(44, 55)
@@ -61,8 +63,28 @@ public class IntermedicateOperationsClass {
         System.out.println();
 
 
-      // peek - primarily used for debugging
+// split the sentence of different list of streams to one and flat to single strings
+        List<List<String>> sentence = Arrays.asList(
+                Arrays.asList("hello world"),
+                Arrays.asList("java streams are powerful")
+        );
+
+        List<String> list1 = sentence.stream()
+                .flatMap(Collection::stream)
+                .flatMap(s -> Arrays.stream(s.split(" ")))
+                .toList();
+
+        System.out.println(list1);
+
+        // peek - primarily used for debugging
         names.stream().peek(System.out::println);
+
+
+
+
+
+
+
 
 
 

@@ -1,10 +1,8 @@
 package com.org.java8features.streams.StreamOperations;
 
 import javax.swing.text.html.Option;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-import java.util.Optional;
+import java.sql.Array;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 import java.util.stream.Stream;
@@ -22,6 +20,15 @@ public class TerminalOperationsClass {
 
         // forEach
         list.stream().forEach(System.out::println);
+        // forEachOrdered
+        List<Integer> nums = new ArrayList<>(List.of(2,33,4,5556,6,5));
+        // in case of parallel stream it doesnot follow the sequenece
+        System.out.println("nums with parallel with normal forEach");
+        nums.parallelStream().forEach(System.out::println);
+        System.out.println("nums with parallel with normal forEachOrder");
+        nums.parallelStream().forEachOrdered(System.out::println);
+
+
 
         // reduce - combines the elements to produce a single result, it takes binary operator
         Optional<Integer> reduce = list.stream().reduce(Integer::sum);
@@ -47,6 +54,15 @@ public class TerminalOperationsClass {
         // findFirst, findAny
         System.out.println(gender.stream().findFirst().get());
         System.out.println(gender.stream().findAny().get());
+
+
+        // toArray
+        Object[] array = Stream.of(2, 33, 556, 7).toArray();
+
+        /// min/max
+        Optional<Integer> max = Stream.of(2, 33, 556, 67).max(Comparator.naturalOrder());
+        System.out.println(max.get());
+
 
         // circuit operations
         // task-1 -- find the list of string having length greater than 3
@@ -78,7 +94,19 @@ public class TerminalOperationsClass {
                 .count();
         System.out.println(count);
 
+        
+        // Streams can't be reused after a terminal operation has been called
+
+                List<String> stds = List.of("ram", "shyam", "hitesh");
+
+                var stream = stds.stream();
+
+                stream.forEach(System.out::println);  // terminal operation
+
+//                stream.map(String::toUpperCase)       // ❌ ERROR
+//                        .forEach(System.out::println);
+            }
+        }
 
 
-    }
-}
+
