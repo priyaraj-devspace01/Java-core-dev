@@ -18,7 +18,7 @@ public class NavigableMapClass {
         System.out.println(map.lowerKey(2)); //1
         System.out.println(map.higherKey(2)); // greater or equal
         System.out.println(map.ceilingKey(2));
-        System.out.println(map.reversed());
+//        System.out.println(map.reversed());
         System.out.println(map.descendingKeySet());
         System.out.println(map.keySet());
 

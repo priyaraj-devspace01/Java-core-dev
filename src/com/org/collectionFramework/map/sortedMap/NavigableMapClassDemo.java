@@ -12,7 +12,7 @@ public class NavigableMapClassDemo {
         map.put(33, "rittt");
 
 
-        System.out.println(map.reversed());
+//        System.out.println(map.reversed());
         System.out.println(map.lowerKey(122));
         System.out.println(map.higherKey(33));
         System.out.println(map.ceilingEntry(33));
