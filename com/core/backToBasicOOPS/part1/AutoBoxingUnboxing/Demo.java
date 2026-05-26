@@ -1,4 +1,4 @@
-package com.core.backToBasicOOPS.part1.interfaceClass;
+package com.core.backToBasicOOPS.part1.AutoBoxingUnboxing;
 
 public class Demo {
     public static void main(String[] args) {
@@ -48,6 +48,16 @@ public class Demo {
         System.out.println(val2 == val3); //compares the actual reference address pointing to the object inside the heap
         System.out.println(val2.equals(val3)); // compares the value as well as reference
         System.out.println(val2.intValue() == val3.intValue()); // same as above
+
+
+        // Integer Caching
+        // HOW ?
+
+
+        Integer i = 100;
+        Integer i2 = 100;
+        System.out.println("caching " + (i == i2));
+
 
 
     }

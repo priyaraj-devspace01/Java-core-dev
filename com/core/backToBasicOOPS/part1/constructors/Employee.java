@@ -1,8 +1,7 @@
-package com.core.backToBasicOOPS.part1;
-
+package com.core.backToBasicOOPS.part1.constructors;
 
 // Need
-class Employee
+public class Employee
 {
     int emp_id;
     String emp_name;
@@ -39,15 +38,5 @@ class Employee
                 ", emp_salary=" + emp_salary +
                 ", emp_city='" + emp_city + '\'' +
                 '}';
-    }
-}
-public class ThisKeyWord {
-    public static void main(String[] args) {
-
-        // this keyword  - always points to the current object reference
-
-        Employee emp1 = new Employee(101, "hitesh", 555555.55f, "Pune");
-        System.out.println(emp1);
-
     }
 }

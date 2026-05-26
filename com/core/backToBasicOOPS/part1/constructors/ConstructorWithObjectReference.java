@@ -1,6 +1,4 @@
-package com.core.backToBasicOOPS.part1;
-
-import java.text.CollationElementIterator;
+package com.core.backToBasicOOPS.part1.constructors;
 
 class College
 {

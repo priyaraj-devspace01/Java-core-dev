@@ -1,4 +1,4 @@
-package com.core.backToBasicOOPS.part1;
+package com.core.backToBasicOOPS.part1.constructors;
 
 
 class Student2
@@ -47,4 +47,11 @@ public class ConstructorClass {
 
         System.out.println(std2);
     }
+
+
+
+    // REMEMBER :
+       /*
+       A CONSTRUCTOR CAN'T BE MARKED AS 'static' BECAUSE CONSTRUCTOR ASSOCIATED WITH EACH INDIVISUAL OBJECT AS INSTANCE LEVEL NOT CLASS LEVEL,WHICH OPPOSING THE RULE FOR STATIC.
+        */
 }

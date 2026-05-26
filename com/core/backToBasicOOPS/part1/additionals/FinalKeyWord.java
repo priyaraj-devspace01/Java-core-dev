@@ -1,4 +1,4 @@
-package com.core.backToBasicOOPS.part1;
+package com.core.backToBasicOOPS.part1.additionals;
 
 public class FinalKeyWord {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package com.core.backToBasicOOPS.part1;
+package com.core.backToBasicOOPS.part1.constructors;
 class Employee2 {
     int emp_id;
     String emp_name;

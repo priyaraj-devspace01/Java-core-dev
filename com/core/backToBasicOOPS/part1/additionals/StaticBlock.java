@@ -1,4 +1,4 @@
-package com.core.backToBasicOOPS.part1;
+package com.core.backToBasicOOPS.part1.additionals;
 
 class College_Std {
 
@@ -27,7 +27,7 @@ public class StaticBlock {
          College_Std college = new College_Std();
          college.sayHii();           ///2
 
-        Class.forName("com.core.backToBasicOOPS.part1.College_Std");  ///1
+        Class.forName("com.core.backToBasicOOPS.part1.additionals.College_Std");  ///1
         // IT ALWAYS RUN BEFORE THE OBJECT CREATION
 
         System.out.println("I am inside the main method");  ///3
