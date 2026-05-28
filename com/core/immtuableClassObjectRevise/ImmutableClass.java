@@ -82,6 +82,7 @@ public class ImmutableClass {
              1) making class as final - restricts the inheritance to override the parent class method
              2) making the fields (variables) as private and final
              3) shouldn't provide setter to update the fields
+             4) need to make the constructor and getters as defensive copy
 
                 // but this is not enough as above example
          */
