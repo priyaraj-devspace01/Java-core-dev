@@ -5,8 +5,9 @@ import java.util.*;
 public class IteratorWhy {
     public static void main(String[] args) {
         // as all collection class doesn't maintain always the order while traversing, so iterating using for loop with list.size( ) [ not optimized ]
-
-
+        /// Limitation:
+        //1)  not all collection type maintain the index order and even though maintaining the order sometime like in case of linked list it may take o(n2) time which is unoptimized
+        //2) we tightly coupled with underlying the data structure and the logic written by us
         // Solution :
         //        Iterable provides a standard way to traverse collections, enables the enhanced for-each loop, and hides the underlying data structure implementation from the client code.
 
@@ -33,6 +34,24 @@ public class IteratorWhy {
             System.out.print(iterator.next() + " ");
         }
         System.out.println();
+
+
+
+
+        // day - 02
+        List<Integer> list2 = new ArrayList<>(list);
+        list2.add(22);
+        list2.add(33);
+
+        Iterator iterator2 = list2.iterator();
+        while(iterator2.hasNext())
+        {
+            System.out.print(iterator2.next() + " ");
+        }
+
+
+
+
 
     }
 }
