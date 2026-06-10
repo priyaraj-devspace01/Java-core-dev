@@ -52,4 +52,31 @@ When used                	During creation             	After creation
 Available in	               Constructor	                ArrayList method
 Works on List reference	          Yes                         	No
 Purpose	                        Initial capacity      	Increase future capacity
- */
+
+
+/// Remember:
+/*
+ArrayList Initial Capacity:
+
+new ArrayList<>()
+
+Initially:
+Capacity = 0 (empty array)
+
+After first insertion:
+Capacity = 10
+
+When full:
+New Capacity = Old Capacity + (Old Capacity / 2)
+
+Example:
+
+10 -> 15
+15 -> 22
+22 -> 33
+
+Interview:
+ArrayList lazily creates an internal
+array of size 10 on the first insertion.
+*/
+
