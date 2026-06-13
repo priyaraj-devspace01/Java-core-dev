@@ -173,6 +173,9 @@ public class ConcurrentHashMapHandOn {
 
     public static void main(String[] args) {
 
+
+        Iterator<Integer> iterator = List.of(222, 33, 5, 3).iterator();
+
         // ==================================================================
         // WeakHashMap Example
         // ==================================================================

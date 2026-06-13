@@ -1,4 +1,4 @@
-package com.org.collectionFramework.iterator;
+package src.com.org.collectionFramework.iterator;
 
 
 import java.util.ArrayList;
