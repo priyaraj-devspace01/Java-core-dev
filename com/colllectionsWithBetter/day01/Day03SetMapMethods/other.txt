@@ -1,9 +1,0 @@
-HashTable -> properties
-
-HashTable - legacy class but not recommended to use as thread safe and slow
-
-
-WeakHashMap
-
-
-IdentityHashMap
