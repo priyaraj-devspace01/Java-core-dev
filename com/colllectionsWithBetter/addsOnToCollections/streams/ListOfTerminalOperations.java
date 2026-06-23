@@ -109,6 +109,21 @@ public class ListOfTerminalOperations {
         .noneMatch(x -> x % 2 == 0); // means none to be satisfied
         System.out.println(b);
 
+          List<Integer> integers = Arrays.asList(1, 2, 32, 4424, 25, 46, 327, 38, 9, 10);
+        Integer reduce = integers.stream()
+//                .reduce(0,  (x,y)-> x+y);
+                .reduce(0,Integer::sum);
+        OptionalDouble average = integers.stream()
+                .mapToInt(x -> x)
+                .average();
+        System.out.println(reduce);
+
+        ///  suppose if we want to find the sum of all numbers without using reduce , stream doesn't allow us for it directly we need to convert to primitives
+
+
+        OptionalDouble ans2 = integers.stream()
+                .mapToInt(x -> x)
+                .average(); //or (sum) or //max .
 
     }
 }

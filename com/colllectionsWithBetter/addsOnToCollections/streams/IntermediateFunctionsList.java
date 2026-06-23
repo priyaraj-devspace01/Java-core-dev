@@ -125,5 +125,59 @@ public class IntermediateFunctionsList {
                 .dropWhile(x -> x < 6)
                 .forEach(System.out::println);
 
+
+
+        /*
+                    takeWhile()
+
+            👉 Take elements while the condition is true. Stop when it becomes false.
+
+            List<Integer> numbers = List.of(1, 2, 3, 4, 1, 2);
+
+            numbers.stream()
+                   .takeWhile(n -> n < 4)
+                   .forEach(System.out::println);
+
+            Output:
+
+            1
+            2
+            3
+
+            Explanation:
+
+            1 < 4 ✅
+            2 < 4 ✅
+            3 < 4 ✅
+            4 < 4 ❌ Stop here
+
+            Everything after 4 is ignored.
+
+            dropWhile()
+
+            👉 Skip elements while the condition is true. Once false is found, return the rest.
+
+            List<Integer> numbers = List.of(1, 2, 3, 4, 1, 2);
+
+            numbers.stream()
+                   .dropWhile(n -> n < 4)
+                   .forEach(System.out::println);
+
+            Output:
+
+            4
+            1
+            2
+
+            Explanation:
+
+            1 < 4 ✅ Skip
+            2 < 4 ✅ Skip
+            3 < 4 ✅ Skip
+            4 < 4 ❌ Stop skipping
+
+            Return everything from 4 onward.
+                     */
+
     }
 }
